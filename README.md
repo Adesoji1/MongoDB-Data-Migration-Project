@@ -1,5 +1,3 @@
-Below is a README template for your MongoDB data migration project, which outlines the steps, scripts, and considerations involved in merging multiple collections into a single unified collection:
-
 ---
 
 # MongoDB Data Migration Project

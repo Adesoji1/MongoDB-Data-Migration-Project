@@ -1,10 +1,14 @@
 from pymongo import MongoClient
 from pymongo import errors
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Establish connection to MongoDB
-client = MongoClient('mongodb://localhost:27017/', retryWrites=True)
-db = client['your_database_name']
+client = MongoClient(os.getenv('MONGO_URI'),retryWrites=True)
+db = client[os.getenv('DATABASE_NAME')]
 
 # New unified collection
 unified_collection = db['users']

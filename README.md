@@ -9,10 +9,11 @@ This project involves the migration of data from multiple MongoDB collections in
 
 ```
 mongodb_migration/
-│
+│__ .env                        # Environment Variable
 ├── migration_script.py         # Script for data migration
 ├── index_creation.py           # Script for creating indexes
 └── README.md                   # Documentation
+|___ requirements.txt           # Dependencies                 
 ```
 
 ## Requirements
